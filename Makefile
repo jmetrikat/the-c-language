@@ -1,6 +1,6 @@
 CC = clang
-CFLAGS += -g -Og -Wall -pthread -pedantic
-SANITIZER = -fsanitize=address -fsanitize=undefined # -fsanitize=leak
+CFLAGS += -fcolor-diagnostics -fansi-escape-codes -g -Og -Wall -pthread -pedantic
+SANITIZER = -fsanitize=address -fsanitize=undefined -fsanitize=leak
 
 SRC = $(shell find . -name '*.c' -print)
 OBJ = $(shell find . -name '*.o' -print)
@@ -16,6 +16,6 @@ all: $(TRG)
 clean:
 	@rm -f $(TRG)
 	@rm -f $(OBJ)
-	@rm -f $(DSYM)
+	@rm -rf $(DSYM)
 
 .PHONY: all clean
