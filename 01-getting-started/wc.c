@@ -1,8 +1,8 @@
 #include <stdio.h>
 
-/* count characters, words and lines in input */
+/* count lines, words and characters in input */
 int main() {
-    char c;
+    int c;
     int nc = 0, nw = 0, nl = 0;
     int state = 1;
 

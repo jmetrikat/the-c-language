@@ -2,7 +2,7 @@
 
 /* use array to count digits, white space, other characters */
 int main() {
-    char c;
+    int c;
 	int ndigits[10];
 	int nwhite = 0, nother = 0;
 

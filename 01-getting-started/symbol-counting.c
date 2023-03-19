@@ -2,7 +2,7 @@
 
 /* a program to count blanks, tabs, and newlines */
 int main() {
-    char c;
+    int c;
     int nl = 0;
     int nt = 0;
     int nb = 0;

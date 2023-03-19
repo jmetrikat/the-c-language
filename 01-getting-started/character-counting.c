@@ -2,7 +2,7 @@
 
 /* count characters in input */
 int main() {
-	int counter;
+	char counter;
 
 	for (counter = 0; getchar() != EOF; counter++) {
 		;

@@ -2,7 +2,7 @@
 
 /* count lines in input */
 int main() {
-	char c;
+	int c;
 	int counter = 0;
 
 	while ((c = getchar()) != EOF) {
