@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /* count characters, words and lines in input */
-int main() {
+int main(void) {
     char c;
     int nc = 0, nw = 0, nl = 0;
     int state = 1;
@@ -19,5 +19,5 @@ int main() {
     }
 
     printf("%d %d %d \n", nl, nw, nc);
-	return 0;
+    return 0;
 }

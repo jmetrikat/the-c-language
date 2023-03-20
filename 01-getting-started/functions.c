@@ -4,7 +4,7 @@
 int power(int base, int exponent);
 
 /* calculate powers of 2 and -3 */
-int main() {
+int main(void) {
     printf("n\tn^2\t  n^-3\n");
     printf("----------------------\n");
 
@@ -19,8 +19,9 @@ int main() {
 int power(int base, int exponent) {
     int result;
 
-    for (result = 1; exponent > 0; exponent--)
+    for (result = 1; exponent > 0; exponent--) {
         result *= base;
+    }
 
 	return result;
 }

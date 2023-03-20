@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /* define a function named main that receives no argument values */
-int main() {
+int main(void) {
 	/* main calls library function printf to print string with new line */
 	printf("hello, world\n");
 

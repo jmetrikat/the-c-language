@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /* a program to copy its input to its output, replacing each string of one or more blanks by a single blank. */
-int main () {
+int main(void) {
     int c;
     char lastc = 0;
 

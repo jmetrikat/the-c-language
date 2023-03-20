@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /* Fahrenheit-Celsius table */
-int main () {
+int main(void) {
 	int lower = 0;
 	int upper = 300;
 	int step = 20;

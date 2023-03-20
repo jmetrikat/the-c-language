@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /* lower: convert input to lower case */
-int main() {
+int main(void) {
     int c;
 
     while ((c = getchar()) != EOF)

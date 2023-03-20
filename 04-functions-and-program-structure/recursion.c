@@ -3,7 +3,7 @@
 /* function prototype */
 void printd(int n);
 
-int main() {
+int main(void) {
     printd(123);
     putchar('\n');
     return 0;

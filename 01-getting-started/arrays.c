@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /* use array to count digits, white space, other characters */
-int main() {
+int main(void) {
     int c;
 	int ndigits[10];
 	int nwhite = 0, nother = 0;

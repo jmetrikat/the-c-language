@@ -11,7 +11,7 @@ int get_line(void);
 void copy(void);
 
 /* print longest input line */
-int main() {
+int main(void) {
     int len = 0;
     extern int max;
     extern char longest[MAX];
@@ -31,7 +31,7 @@ int main() {
 }
 
 /* read a line into array, return length */
-int get_line() {
+int get_line(void) {
     char c;
     int idx;
     extern char line[];
@@ -49,7 +49,7 @@ int get_line() {
 }
 
 /* copy src to dest */
-void copy() {
+void copy(void) {
     extern char line[], longest[];
 
     for (int i = 0; (longest[i] = line[i]) != '\0'; i++)

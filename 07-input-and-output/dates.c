@@ -2,9 +2,9 @@
 #include <stdlib.h>
 
 /* read dates in the 'form day month year' or 'month/day/year' */
-int main() {
+int main(void) {
     size_t linesize = 1000;
-    char * line = (char *) malloc(linesize * sizeof(char));
+    char *line = (char *)malloc(linesize * sizeof(char));
 
     int day, month, year;
     char monthname[20];

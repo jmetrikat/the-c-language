@@ -1,13 +1,13 @@
 #include <stdio.h>
 
 /* count characters in input */
-int main() {
-	char counter;
+int main(void) {
+    char counter;
 
-	for (counter = 0; getchar() != EOF; counter++) {
-		;
-	}
-	printf("%d\n", counter);
+    for (counter = 0; getchar() != EOF; counter++) {
+        ;
+    }
+    printf("%d\n", counter);
 
-	return 0;
+    return 0;
 }

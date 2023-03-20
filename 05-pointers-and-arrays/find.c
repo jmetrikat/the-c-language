@@ -20,9 +20,9 @@ int main(int argc, char *argv[]) {
                     number = 1;
                     break;
                 default:
-                    fprintf(stderr, "find: illegal option %c\n", c);
-                    exit(1);
-
+                    fprintf(stderr, "find: illegal option '%c'\n", c);
+                    argc = 0;
+                    found = -1;
             }
         }
     }
@@ -43,5 +43,5 @@ int main(int argc, char *argv[]) {
         }
     }
 
-    return 0;
+    return found;
 }
