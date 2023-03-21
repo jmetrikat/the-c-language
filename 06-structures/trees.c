@@ -65,18 +65,7 @@ struct tnode *talloc(void) {
     return (struct tnode *) malloc(sizeof(struct tnode));
 }
 
-// /* make a duplicate of s */
-// char *strdup(char *s) {
-//     char *p;
-
-//     p = (char *) malloc(strlen(s) + 1);
-//     if (p != NULL) {
-//         strcpy(p, s);
-//     }
-
-//     return p;
-// }
-
+/* addtree: add a node with w, at or below p */
 struct tnode *addtree(struct tnode *p, char *w) {
     int cond;
 
@@ -96,7 +85,7 @@ struct tnode *addtree(struct tnode *p, char *w) {
     return p;
 }
 
-
+/* treeprint: in-order print of tree p */
 void treeprint(struct tnode *p) {
     if (p != NULL) {
         treeprint(p->left);
